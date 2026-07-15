@@ -1,6 +1,6 @@
 {
   "name": "env-safe-plus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tiny, typed environment variable validator with defaults, type coercion, and clear errors.",
   "type": "module",
   "main": "./src/index.js",
