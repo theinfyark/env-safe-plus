@@ -1,0 +1,42 @@
+{
+  "name": "env-safe-plus",
+  "version": "1.0.0",
+  "description": "Tiny, typed environment variable validator with defaults, type coercion, and clear errors.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test tests/env.test.js",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "env",
+    "environment",
+    "validator",
+    "process.env",
+    "config",
+    "dotenv",
+    "schema",
+    "type-safe"
+  ],
+  "author": "anilachary",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theinfyark/env-safe-plus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/theinfyark/env-safe-plus/issues"
+  },
+  "homepage": "https://github.com/theinfyark/env-safe-plus#readme",
+  "engines": {
+    "node": ">=18"
+  }
+}
