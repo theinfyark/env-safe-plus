@@ -1,6 +1,6 @@
 {
   "name": "env-safe-plus",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Tiny, typed environment variable validator with defaults, type coercion, and clear errors.",
   "type": "module",
   "main": "./src/index.js",
@@ -31,7 +31,13 @@
     "config",
     "dotenv",
     "schema",
-    "type-safe"
+    "type-safe",
+    "env-validator",
+    "environment-variables",
+    "config-validation",
+    "validation",
+    "12-factor",
+    "nodejs"
   ],
   "author": "anilachary",
   "license": "MIT",
