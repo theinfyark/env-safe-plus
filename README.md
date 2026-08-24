@@ -29,6 +29,16 @@ Automatically checks for:
 npm install env-safe-plus
 ```
 
+## Features
+
+- Schema-based env validation with type coercion
+- Defaults, optional fields, enums, URL, email, and JSON
+- Aggregated `EnvError` with every issue listed
+- JSON parsing ignores `__proto__` / `constructor` keys
+- Dual ESM + CommonJS entry points
+
+> TypeScript successor: [`env-ok-kit`](https://www.npmjs.com/package/env-ok-kit) (this package remains supported).
+
 ## Quick start
 
 ```js

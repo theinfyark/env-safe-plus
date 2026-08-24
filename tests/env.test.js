@@ -160,3 +160,15 @@ describe('safeEnv()', () => {
     if (!result.ok) assert.ok(result.error instanceof EnvError);
   });
 });
+
+describe('json prototype safety', () => {
+  it('does not assign __proto__ from JSON env values', () => {
+    const config = env(
+      { META: 'json' },
+      { source: { META: '{"__proto__":{"polluted":true},"a":1}' } },
+    );
+    assert.equal(Object.prototype.hasOwnProperty.call(config.META, 'polluted'), false);
+    assert.equal(/** @type {any} */ ({}.polluted), undefined);
+    assert.equal(config.META.a, 1);
+  });
+});

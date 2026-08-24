@@ -74,7 +74,9 @@ function coerce(key, raw, field) {
 
     case 'json': {
       try {
-        return JSON.parse(value);
+        return JSON.parse(value, (k, v) =>
+          k === '__proto__' || k === 'constructor' ? undefined : v,
+        );
       } catch {
         throw `${key} must be valid JSON (got "${raw}")`;
       }
